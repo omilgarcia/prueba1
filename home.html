@@ -1,0 +1,381 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+  <script src="https://kit.fontawesome.com/2fe4e08a45.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <!--Container Principal-->
+    <br>
+    <div class="form-row justify-content-md-center">
+      <!-- Titulo.. Visitantes -->
+      <h1>Visitantes <i class="fas fa-user-tie"></i></h1>
+    </div> <!-- ./ Titulo.. Visitantes -->
+    <!-- <div class="dropdown-divider"></div> -->
+    <div class="container-fluid">
+      <!-- Container 1-->
+
+    </div>
+    <!--./Container 1-->
+    <br>
+
+    <div class="container-fluid">
+      <!-- Conatainer (Crear Visita y Visitante)-->
+      <div class="form-row">
+        <!-- Row 1-->
+        <div class=" form-group col-auto">
+          <!--Crear Visitante-->
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#crearvisitante">
+            Crear Visitante
+            <i class="fas fa-user-edit"></i>
+          </button>
+
+          <!-- Modal 1-->
+          <div class="modal fade" id="crearvisitante" tabindex="-1" role="dialog" aria-labelledby="crearvisitante"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="crearvisitante">Crear visitante</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="form-row">
+                    <div class="form-group">
+                      <select name="" class="form-control col-auto" id="">
+                        <option value="">Cedula</option>
+                        <option value="">Pasaporte</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-auto">
+                      <input type="text" class="form-control" name="" id="" placeholder="Identificacion">
+                    </div>
+                  </div>
+                  <!--Row 1-->
+
+                  <div class="form-row">
+                    <div class="form-group col-sm">
+                      <label for="fname">Primer nombre</label>
+                      <input type="text" class="form-control" name="" id="pname" placeholder=""
+                        style="text-transform: uppercase;">
+                    </div>
+                    <div class="form-group col-sm">
+                      <label for="mname">Segundo nombe</label>
+                      <input type="text" class="form-control" name="" id="mname" placeholder=""
+                        style="text-transform: uppercase;">
+                    </div>
+                  </div> <!-- Row 2-->
+                  <div class="form-row">
+                    <div class="form-group col-sm">
+                      <label for="lname">Primer apellido</label>
+                      <input type="text" class="form-control" name="" id="laname" placeholder=""
+                        style="text-transform: uppercase;">
+                    </div>
+                    <div class="form-group col-sm">
+                      <label for="slname">Segundo apellido</label>
+                      <input type="text" class="form-control" name="" id="slname" placeholder=""
+                        style="text-transform: uppercase;">
+                    </div>
+                  </div> <!-- Row 3-->
+                  <div class="form-row">
+                    <div class="form-group col-auto">
+                      <label for="company">Empresa</label>
+                      <input type="text" class="form-control" name="" id="company" placeholder=""
+                        style="text-transform: uppercase;">
+                    </div>
+                  </div> <!-- Row 4-->
+                </div> <!-- Modal Body-->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                  <button type="button" class="btn btn-primary">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- //Crear Visitante-->
+
+        <div class="form-group col-auto">
+          <!-- Crear Visita -->
+          <!-- Button trigger modal -->
+          <!-- Crear Visita -->
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#crearvisita">
+            Crear Visita
+            <i class="fas fa-edit"></i>
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="crearvisita" tabindex="-1" role="dialog" aria-labelledby="crearvisita"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="crearvisita">Crear Visita</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <form class="needs-validation" novalidate>
+                  <div class="modal-body">
+                    <div class="form-row">
+                      <!--Identificacion-->
+                      <div class="form-group col-auto">
+                        <select name="" class="form-control" id="">
+                          <option value="">Cedula</option>
+                          <option value="">Pasaporte</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-auto">
+                        <input type="text" class="form-control" name="" id="" required>
+                        <div class="invalid-freedback">
+
+                        </div>
+                      </div>
+                    </div><!-- Row 1-->
+
+                    <div class="form-row">
+                      <!--Nombre Visitante Solo Lectura-->
+                      <div class="form-group col-sm">
+                        <label for="v">Nombre</label>
+                        <input type="text" class="form-control" name="" id="v" placeholder="" readonly
+                          style="text-transform: uppercase;" required>
+                      </div>
+                    </div>
+                    <!--Row 2-->
+
+                    <div class="form-row">
+                      <!-- Empresa Visitante Solo Lectura-->
+                      <div class="form-group col-sm">
+                        <label for="e">Empresa</label>
+                        <input type="text" class="form-control" name="" id="e" placeholder="" readonly
+                          style="text-transform: uppercase;" required>
+                      </div>
+                    </div>
+
+                    <div class="form-row">
+                      <div class="form-group col-auto">
+                        <label for="d">Departamento</label>
+                        <select name="" class="form-control" id="d" required>
+                          <option value=""></option>
+                          <option value="">Aduanas</option>
+                          <option value="">Trafico</option>
+                          <option value="">Administracion</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-sm">
+                        <label for="p">Persona a visitar</label>
+                        <select name="" class="form-control" id="p" required>
+
+                        </select>
+                      </div>
+                    </div>
+                    <!--Row 4-->
+
+                    <div class="form-row">
+                      <div class="form-group col-sm">
+                        <label for="c">No. Carnet</label>
+                        <select name="" class="form-control col-sm-3" id="c" required>
+
+                        </select>
+                      </div>
+                    </div> <!-- Row 5-->
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-primary">Save changes</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div> <!-- End Modal 2-->
+        </div> <!-- //Crear Visita-->
+
+        <div class="col-auto">
+          <!-- Settings BTN-->
+          <p>
+            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample"
+              aria-expanded="false" aria-controls="collapseExample">
+              <i class="fas fa-sliders-h"></i>
+            </button>
+          </p>
+          <div class="collapse" id="collapseExample">
+            <!-- Collapse Settings-->
+            <div class="card card-body">
+              <!-- Body Setting-->
+              <nav>
+                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                  <a class="nav-item nav-link active" id="nav-Visitantes-tab" data-toggle="tab" href="#nav-Visitantes"
+                    role="tab" aria-controls="nav-Visitantes" aria-selected="true">Visitantes</a>
+                  <a class="nav-item nav-link" id="nav-Empresas-tab" data-toggle="tab" href="#nav-Empresas" role="tab"
+                    aria-controls="nav-Empresas" aria-selected="false">Empresas</a>
+                  <a class="nav-item nav-link" id="nav-Departamento-tab" data-toggle="tab" href="#nav-Departamento"
+                    role="tab" aria-controls="nav-Departamento" aria-selected="false">Departamento</a>
+                  <a class="nav-item nav-link" id="nav-Carnet-tab" data-toggle="tab" href="#nav-Carnet" role="tab"
+                    aria-controls="nav-Carnet" aria-selected="false">Carnet</a>
+                </div>
+              </nav>
+              <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="nav-Visitantes" role="tabpanel"
+                  aria-labelledby="nav-Visitantes-tab">
+                  <br>
+                  <div class="row">
+                    <div class="form-group col-auto">
+                      <select name="c" class="form-control" id="c">
+                        <option value=""></option>
+                        <option value="Cedula">Cedula</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                      </select>
+                    </div>
+                    <div class="form-group col-auto">
+                      <input type="text" class="form-control" name="" id="cd" placeholder="Identificacion">
+                    </div>
+                    <div class="form-gorup col-auto">
+                      <input type="text" class="form-control" name="" id="" placeholder="Nombre">
+                    </div>
+                    <div class="form-gorup col-auto">
+                      <input type="text" class="form-control" name="" id="" placeholder="Apellido">
+                    </div>
+                    <div class="form-gorup col-auto">
+                      <input type="text" class="form-control" name="" id="" placeholder="Empresa">
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade show active" id="nav-Empresas" role="tabpanel"
+                  aria-labelledby="nav-Empresas-tab">
+                </div>
+                <div class="tab-pane fade show active" id="nav-Departamento" role="tabpanel"
+                  aria-labelledby="nav-Departamento-tab">
+                </div>
+                <div class="tab-pane fade show active" id="nav-Carnet" role="tabpanel" aria-labelledby="nav-Carnet-tab">
+                </div>
+              </div>
+            </div>
+          </div> <!-- ./ Settings BTN-->
+
+
+        </div> <!-- ./Body Setting-->
+      </div> <!-- ./Collapse Settings-->
+
+
+    </div> <!-- ./Settings BTN-->
+  </div> <!-- ./ form-Row-->
+  </div> <!-- ./Conatainer (Crear Visita y Visitante)-->
+  <br>
+
+  <div class="container-fluid">
+    <!--Container Fluid (Table Visitantes)-->
+    <div class="table-responsible-sm table-">
+      <table class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">VISITANTE</th>
+            <th scope="col">EMPRESA</th>
+            <th scope="col">DEPARTAMENTO A VISITAR</th>
+            <th scope="col">PERSONA A VISITAR</th>
+            <th scope="col">CARNET</th>
+            <th scope="col">FECHA ENTRADA</th>
+            <th scope="col">HORA ENTRADA</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark Carrier</td>
+            <td>Maritima Dominicana</td>
+            <td>Aduanas</td>
+            <td>Omil Garcia</td>
+            <td>002</td>
+            <td>11-24-2019</td>
+            <td>111111</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Mark Carrier</td>
+            <td>Maritima Dominicana</td>
+            <td>Aduanas</td>
+            <td>Omil Garcia</td>
+            <td>002</td>
+            <td>11-24-2019</td>
+            <td>111111</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Mark Carrier</td>
+            <td>Maritima Dominicana</td>
+            <td>Aduanas</td>
+            <td>Omil Garcia</td>
+            <td>002</td>
+            <td>11-24-2019</td>
+            <td>111111</td>
+          </tr>
+          <tr>
+            <th scope="row">4</th>
+            <td>Mark Carrier</td>
+            <td>Maritima Dominicana</td>
+            <td>Aduanas</td>
+            <td>Omil Garcia</td>
+            <td>002</td>
+            <td>11-24-2019</td>
+            <td>111111</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+
+
+  </div> <!-- ./Container Fluid (Table Visitantes)-->
+
+  </div>
+  <!--./Container Principal-->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+<footer>
+  <div class="bg bg-ligt">
+    <!-- Footer-->
+    <div class="form-row col-1">
+      <button class="form-control bg-sucess">Historial <i class="fas fa-history"></i></button>
+    </div>
+    <div class="form-row justify-conten-md-center">
+      <button class="form-control bg-sucess">Historial <i class="fas fa-history"></i></button>
+    </div>
+
+  </div> <!-- ./DIv Footer-->
+  <div class="row justify-content-end">
+    <div class=" col-sm-1">
+      <button class="form-control bg-sucess">Historial <i class="fas fa-history"></i></button>
+
+    </div>
+
+  </div>
+
+  </div> <!-- Footer-->
+</footer>
+
+</html>
